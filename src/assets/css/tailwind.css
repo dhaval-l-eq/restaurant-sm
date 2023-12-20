@@ -1,5 +1,5 @@
 /* Animate css */
-@import './assets/css/animate.css';
+@import './animate.css';
 
 @tailwind base;
 @tailwind components;
@@ -41,16 +41,16 @@
 
     .sidebar .nav-item > button,
     .sidebar .nav-item > a {
-        @apply mb-1 flex items-center justify-between overflow-hidden whitespace-nowrap rounded-md p-2.5 text-[#506690] hover:bg-[#000]/[0.08] hover:text-black dark:hover:bg-[#181f32] dark:hover:text-white-dark w-full;
+        @apply mb-1 flex items-center justify-between overflow-hidden whitespace-nowrap rounded-md p-2.5 text-[#506690] hover:bg-[#000]/[0.08] hover:text-black dark:hover:bg-[#181f32] dark:hover:text-white-800 w-full;
     }
     .sidebar .nav-item > button.active,
     .sidebar .nav-item > a.active {
-        @apply bg-[#000]/[0.08] text-black dark:bg-[#181f32] dark:text-white-dark;
+        @apply bg-[#000]/[0.08] text-black dark:bg-[#181f32] dark:text-white-800;
     }
 
     .sidebar .nav-item > button.active > div > span,
     .sidebar .nav-item > a.active > div > span {
-        @apply dark:!text-white-dark;
+        @apply dark:!text-white-800;
     }
 
     .sidebar ul.sub-menu li button,
@@ -100,15 +100,15 @@
     }
 
     .horizontal-menu .nav-link {
-        @apply flex items-center py-2.5 px-2 rounded-lg hover:bg-[#000]/[0.08] hover:text-black dark:hover:bg-[#181f32] dark:hover:text-white-dark xl:px-4;
+        @apply flex items-center py-2.5 px-2 rounded-lg hover:bg-[#000]/[0.08] hover:text-black dark:hover:bg-[#181f32] dark:hover:text-white-800 xl:px-4;
     }
 
     .horizontal-menu .nav-link.active {
-        @apply bg-[#000]/[0.08] text-black dark:bg-[#181f32] dark:text-white-dark;
+        @apply bg-[#000]/[0.08] text-black dark:bg-[#181f32] dark:text-white-800;
     }
 
     .horizontal-menu ul.sub-menu {
-        @apply absolute top-full z-[10] hidden min-w-[180px] rounded bg-white p-0 py-2 text-dark shadow dark:bg-[#1b2e4b] dark:text-white-dark;
+        @apply absolute top-full z-[10] hidden min-w-[180px] rounded bg-white p-0 py-2 text-dark shadow dark:bg-[#1b2e4b] dark:text-white-800;
     }
 
     .horizontal-menu ul.sub-menu a,
@@ -283,25 +283,25 @@
         @apply relative my-1 rounded border border-transparent px-2 py-0.5 text-xs font-semibold text-white;
     }
     .badge-outline-primary {
-        @apply border-primary text-primary hover:bg-primary-light dark:hover:bg-primary dark:hover:text-white-light;
+        @apply border-primary text-primary hover:bg-primary-100 dark:hover:bg-primary dark:hover:text-white-100;
     }
     .badge-outline-secondary {
-        @apply border-secondary text-secondary hover:bg-secondary-light dark:hover:bg-secondary dark:hover:text-white-light;
+        @apply border-secondary text-secondary hover:bg-secondary-100 dark:hover:bg-secondary dark:hover:text-white-100;
     }
     .badge-outline-success {
-        @apply border-success text-success hover:bg-success-light dark:hover:bg-success dark:hover:text-white-light;
+        @apply border-success text-success hover:bg-success-100 dark:hover:bg-success dark:hover:text-white-100;
     }
     .badge-outline-danger {
-        @apply border-danger text-danger hover:bg-danger-light dark:hover:bg-danger dark:hover:text-white-light;
+        @apply border-danger text-danger hover:bg-danger-100 dark:hover:bg-danger dark:hover:text-white-100;
     }
     .badge-outline-warning {
-        @apply border-warning text-warning hover:bg-warning-light dark:hover:bg-warning dark:hover:text-white-light;
+        @apply border-warning text-warning hover:bg-warning-100 dark:hover:bg-warning dark:hover:text-white-100;
     }
     .badge-outline-info {
-        @apply border-info text-info hover:bg-info-light dark:hover:bg-info dark:hover:text-white-light;
+        @apply border-info text-info hover:bg-info-100 dark:hover:bg-info dark:hover:text-white-100;
     }
     .badge-outline-dark {
-        @apply border-dark text-dark hover:bg-dark-light dark:hover:bg-dark dark:hover:text-white-light;
+        @apply border-dark text-dark hover:bg-dark-100 dark:hover:bg-dark dark:hover:text-white-100;
     }
 
     /* Form */
@@ -309,7 +309,7 @@
     .form-textarea,
     .form-select,
     .form-multiselect {
-        @apply w-full rounded-md border border-white-light bg-white px-4 py-2 text-sm font-semibold text-black !outline-none focus:border-primary focus:ring-transparent dark:border-[#17263c] dark:bg-[#121e32] dark:text-white-dark dark:focus:border-primary;
+        @apply w-full rounded-md border border-white-100 bg-white px-4 py-2 text-sm font-semibold text-black !outline-none focus:border-primary focus:ring-transparent dark:border-[#17263c] dark:bg-[#121e32] dark:text-white-800 dark:focus:border-primary;
     }
 
     .form-input-lg,
@@ -375,7 +375,7 @@
     /* checkbox & radio */
     .form-radio,
     .form-checkbox {
-        @apply h-5 w-5 cursor-pointer rounded border-2 border-white-light bg-transparent text-primary !shadow-none !outline-none !ring-0 !ring-offset-0 checked:bg-[length:90%_90%] disabled:cursor-not-allowed disabled:bg-[#eee] ltr:mr-1.5 rtl:ml-1.5
+        @apply h-5 w-5 cursor-pointer rounded border-2 border-white-100 bg-transparent text-primary !shadow-none !outline-none !ring-0 !ring-offset-0 checked:bg-[length:90%_90%] disabled:cursor-not-allowed disabled:bg-[#eee] ltr:mr-1.5 rtl:ml-1.5
       dark:border-[#253b5c] dark:checked:border-transparent dark:disabled:bg-[#1b2e4b];
     }
 
@@ -442,7 +442,7 @@
         @apply flex;
     }
     .dropdown ul {
-        @apply my-1 min-w-[120px] rounded bg-white p-0 py-2 shadow dark:bg-[#1b2e4b] text-black dark:text-white-dark;
+        @apply my-1 min-w-[120px] rounded bg-white p-0 py-2 shadow dark:bg-[#1b2e4b] text-black dark:text-white-800;
     }
     .dropdown ul li > a,
     .dropdown ul li > button {
@@ -461,7 +461,7 @@
     }
     table thead tr,
     table tfoot tr {
-        @apply border-b-0 bg-white-light/30  dark:!bg-[#1a2941];
+        @apply border-b-0 bg-white-100/30  dark:!bg-[#1a2941];
     }
     table thead tr th,
     table tfoot tr th,
@@ -473,13 +473,13 @@
         @apply font-semibold;
     }
     table tbody tr {
-        @apply border-b !border-white-light/40 dark:!border-[#191e3a];
+        @apply border-b !border-white-100/40 dark:!border-[#191e3a];
     }
     table.table-hover tbody tr {
-        @apply hover:!bg-white-light/20 dark:hover:!bg-[#1a2941]/40;
+        @apply hover:!bg-white-100/20 dark:hover:!bg-[#1a2941]/40;
     }
     table.table-striped tbody tr:nth-child(odd) {
-        @apply !bg-white-light/20 dark:!bg-[#1a2941]/40;
+        @apply !bg-white-100/20 dark:!bg-[#1a2941]/40;
     }
 
     table.dataTable-table tbody tr th,
@@ -520,7 +520,7 @@
 
 /* swal2 */
 .swal2-container .swal2-close {
-    @apply text-white hover:text-dark-light focus:shadow-none;
+    @apply text-white hover:text-dark-100 focus:shadow-none;
 }
 
 .swal2-container .swal2-popup.swal2-toast {
