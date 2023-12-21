@@ -7,7 +7,7 @@ const finalRoutes = routes.map((route) => {
    return {
       ...route,
       element:
-         route.layout === "blank" ? (
+         route?.layout === "blank" ? (
             <BlankLayout>{route.element}</BlankLayout>
          ) : (
             <DefaultLayout>{route.element}</DefaultLayout>

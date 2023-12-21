@@ -9,8 +9,10 @@ module.exports = {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: '#4361ee',
+                    DEFAULT: '#5A67BA',
                     100: '#eaf1ff',
+                    400: '#707FDD',
+                    500: '#374286',
                     'dark-light': 'rgba(67,97,238,.15)',
                 },
                 secondary: {
@@ -44,9 +46,16 @@ module.exports = {
                     'dark-light': 'rgba(59,63,92,.15)',
                 },
                 black: {
-                    DEFAULT: '#0e1726',
-                    100: '#e3e4eb',
+                    DEFAULT: '#000',
+                    100: '#343434',
+                    200: '#474747',
                     'dark-light': 'rgba(14,23,38,.15)',
+                },
+                gray: {
+                    DEFAULT: '#929292',
+                    100: '#C8C8C8',
+                    200: '#828282',
+                    300: '#8B8B8B',
                 },
                 white: {
                     DEFAULT: '#ffffff',
@@ -56,30 +65,35 @@ module.exports = {
             },
             fontFamily: {
                 nunito: ['Nunito', 'sans-serif'],
+                primary: ['Poppins', 'sans-serif'],
+                secondary: ['Open Sans', 'sans-serif'],
             },
             spacing: {
-                4.5: '18px',
+                1: '2px',
+                2: '4px',
+                3: '6px',
+                4: '8px',
+                4.5: '10px',
+                5: '12px',
+                5.5: '14px',
+                6: '16px',
+                7: '18px',
+                8: '20px',
+                9: '24px',
+                10: '32px',
+                11: '40px',
+                12: '45px',
             },
             boxShadow: {
                 '3xl': '0 2px 2px rgb(224 230 237 / 46%), 1px 6px 7px rgb(224 230 237 / 46%)',
             },
-            typography: ({ theme }) => ({
-                DEFAULT: {
-                    css: {
-                        '--tw-prose-invert-headings': theme('colors.white.dark'),
-                        '--tw-prose-invert-links': theme('colors.white.dark'),
-                        h1: { fontSize: '40px', marginBottom: '0.5rem', marginTop: 0 },
-                        h2: { fontSize: '32px', marginBottom: '0.5rem', marginTop: 0 },
-                        h3: { fontSize: '28px', marginBottom: '0.5rem', marginTop: 0 },
-                        h4: { fontSize: '24px', marginBottom: '0.5rem', marginTop: 0 },
-                        h5: { fontSize: '20px', marginBottom: '0.5rem', marginTop: 0 },
-                        h6: { fontSize: '16px', marginBottom: '0.5rem', marginTop: 0 },
-                        p: { marginBottom: '0.5rem' },
-                        li: { margin: 0 },
-                        img: { margin: 0 },
-                    },
-                },
-            }),
+            fontSize: {
+                'xl': '1.17856rem',
+                // '2xl': '1.17856rem',
+                '3xl': '1.77338rem',
+                '4xl': '2.04063rem',
+                '5xl': '3rem',
+            }
         },
     },
     plugins: [
