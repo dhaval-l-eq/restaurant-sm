@@ -22,10 +22,10 @@ function Signup() {
    return (
       <AuthLayout image={BGImage}>
          <div className="max-w-[440px] w-11/12">
-            <HeadingMedium customClass="text-black-100 text-center">
+            <HeadingMedium className="text-black-100 text-center">
                Get started with <span className="font-bold text-primary-400">SM Restaurant</span>
             </HeadingMedium>
-            <TextLarge customClass="text-gray text-center">Sign up to your profile below</TextLarge>
+            <TextLarge className="text-gray text-center">Sign up to your profile below</TextLarge>
             <div className="pe-2 ps-5 mt-9">
                <form onSubmit={submitHandler}>
                   <div className="space-y-9">
@@ -61,11 +61,11 @@ function Signup() {
                         </label>
                      </div>
                   </div>
-                  <Button customClass="mt-11 bg-primary-400 font-secondary" size="block">
+                  <Button className="mt-11 bg-primary-400 font-secondary" size="block">
                      Sign Up
                   </Button>
                </form>
-               <TextPrimary customClass="mt-6 text-gray-200 font-secondary text-center">
+               <TextPrimary className="mt-6 text-gray-200 font-secondary text-center">
                   Already have account? <NavLink className='text-primary-400 font-bold link' to="/login">Log In</NavLink>
                </TextPrimary>
             </div>

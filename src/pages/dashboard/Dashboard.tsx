@@ -1,4 +1,4 @@
-const Index = () => {
+const Dashboard = () => {
 
     return (
         <div>
@@ -7,4 +7,4 @@ const Index = () => {
     );
 };
 
-export default Index;
+export default Dashboard;

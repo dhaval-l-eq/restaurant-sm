@@ -1,10 +1,11 @@
 import { lazy } from 'react';
 import { Route } from '../typescript/interfaces/router';
-import Landing from '../pages/auth/Landing';
-import Signup from '../pages/auth/Signup';
 import { Navigate } from 'react-router-dom';
-import Login from '../pages/auth/Login';
-const Index = lazy(() => import('../pages/Index'));
+
+const Dashboard = lazy(() => import('../pages/dashboard/Dashboard'));
+const Landing = lazy(() => import('../pages/auth/Landing'));
+const Signup = lazy(() => import('../pages/auth/Signup'));
+const Login = lazy(() => import('../pages/auth/Login'));
 
 const routes: Route[] = [
     {
@@ -24,7 +25,7 @@ const routes: Route[] = [
     },
     {
         path: '/dashboard',
-        element: <Index />,
+        element: <Dashboard />,
     },
     {
         path: '*',
